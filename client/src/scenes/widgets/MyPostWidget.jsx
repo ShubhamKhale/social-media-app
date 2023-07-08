@@ -131,7 +131,7 @@ import {
             </Typography>
           </FlexBetween>
   
-          {isNonMobileScreens ? (
+          {/* {isNonMobileScreens ? (
             <>
               <FlexBetween gap="0.25rem">
                 <GifBoxOutlined sx={{ color: mediumMain }} />
@@ -152,16 +152,17 @@ import {
             <FlexBetween gap="0.25rem">
               <MoreHorizOutlined sx={{ color: mediumMain }} />
             </FlexBetween>
-          )}
+          )} */}
   
           <Button
             disabled={!post}
             onClick={handlePost}
             sx={{
-              color: palette.background.alt,
+              // color: palette.background.alt,
               backgroundColor: palette.primary.main,
               borderRadius: "3rem",
             }}
+            style={{color: "white"}}
           >
             POST
           </Button>
