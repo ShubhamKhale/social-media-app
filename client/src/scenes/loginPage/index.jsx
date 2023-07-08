@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+import logo from "./logo.png";
 
 const LoginPage = () => {
   const theme = useTheme();
@@ -13,7 +14,7 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          Sociopedia
+          <img src={logo} alt="ShareNet" style={{width: "7rem", borderRadius: "25px"}} />
         </Typography>
       </Box>
 
@@ -25,7 +26,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Socipedia, the Social Media for Sociopaths!
+          Welcome to ShareNet, the Social Media for Sociopaths!
         </Typography>
         <Form />
       </Box>
